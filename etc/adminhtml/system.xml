@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <section id="installments" translate="label" type="text" sortOrder="410" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Installments</label>
+            <tab>sales</tab>
+            <resource>Gabrielqs_Installments::installments</resource>
+
+            <!-- Maximum Installments -->
+            <group id="maximum_installments" translate="label" type="text" sortOrder="710" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Maximum Installments Frontend UI</label>
+
+                <!-- Only Show Interest Free Installments -->
+                <field id="interest_free_only" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Consider Interest Free Installments Only</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <!-- Which Payment Methods Should we Consider? -->
+                <field id="payment_methods" translate="label" type="multiselect" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment Methods</label>
+                    <source_model>Gabrielqs\Installments\Model\Config\Source\PaymentMethods</source_model>
+                </field>
+
+                <!-- Show Maximum Installments on Product Lists? -->
+                <field id="enable_product_list" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Show Maximum Installments on Product Lists</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <!-- Show Maximum Installments on Product View? -->
+                <field id="enable_product_view" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Show Maximum Installments on Product View</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <!-- Show Maximum Installments on Cart? -->
+                <field id="enable_cart" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Show Maximum Installments on Cart</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+            </group>
+        </section>
+    </system>
+</config>

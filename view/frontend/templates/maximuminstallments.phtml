@@ -1,0 +1,8 @@
+<?php if ($block->isShowMaximumInstallments()): ?>
+    <?php $qty = $block->getMaximumInstallmentQuantity(); ?>
+    <?php if ($qty > 1): ?>
+        <div class="installment">
+			<?php echo (string) __('Split payment of up to <span>%1 times of %2</span>', $qty, $this->formatCurrency($block->getMaximumInstallmentAmount()) ); ?>
+        </div>
+    <?php endif; ?>
+<?php endif;

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="cart.summary">
+            <block class="Gabrielqs\Installments\Block\MaximumInstallments\Cart"
+                   name="maximum_installments" template="Gabrielqs_Installments::maximuminstallments.phtml"
+                   after="checkout.cart.totals.container" />
+        </referenceContainer>
+    </body>
+</page>

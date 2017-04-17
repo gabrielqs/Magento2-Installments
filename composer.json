@@ -1,0 +1,27 @@
+{
+  "name": "gabrielqs/installments",
+  "description": "Cálculo de parcelamento genérico a ser utilizado por módulos de métodos de pagamento.\nGeneric installments calculation module, to be used by payment method modules.",
+  "type": "magento2-module",
+  "version": "0.1.1",
+  "license": [
+    "MIT"
+  ],
+  "require": {
+    "gabrielqs/theme-settings": "0.1.0"
+  },
+  "authors": [
+    {
+      "name": "Gabriel Queiroz Silva",
+      "email": "gabrielqs@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Gabrielqs\\Installments\\": ""
+    }
+  }
+}

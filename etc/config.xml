@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+            <!-- Installments - Default Values-->
+            <installments>
+                <maximum_installments>
+                    <interest_free_only>1</interest_free_only>
+                    <enable_product_list>1</enable_product_list>
+                    <enable_product_view>1</enable_product_view>
+                    <enable_cart>1</enable_cart>
+                </maximum_installments>
+
+                <!-- Payment methods to be used by the installment calculator should have a node declared here -->
+                <!-- For example, the Cielo payment method declares itself by creating a node <cielo /> under this node -->
+                <!-- on it's config.xml file -->
+                <payment_methods />
+            </installments>
+    </default>
+</config>
