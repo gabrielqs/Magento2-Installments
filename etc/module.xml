@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Module/etc/module.xsd">
-  <module name="Gabrielqs_Installments" setup_version="0.1.0">
+  <module name="Gabrielqs_Installments" setup_version="0.1.1">
     <sequence>
       <module name="Gabrielqs_ThemeSettings" />
       <module name="Magento_Sales" />
